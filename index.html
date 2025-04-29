@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loan Approval Prediction</title>
+</head>
+<body>
+    <h1>Loan Approval Prediction</h1>
+    <form action="/predict" method="post">
+        <label>Education Level (Numeric):</label><br>
+        <input type="text" name="education" required><br><br>
+
+        <label>Annual Income:</label><br>
+        <input type="text" name="income_annum" required><br><br>
+
+        <label>Self Employed (1=Yes, 0=No):</label><br>
+        <input type="text" name="self_employed" required><br><br>
+
+        <label>Bank Asset Value:</label><br>
+        <input type="text" name="bank_asset_value" required><br><br>
+
+        <input type="submit" value="Predict Loan Status">
+    </form>
+</body>
+</html>
